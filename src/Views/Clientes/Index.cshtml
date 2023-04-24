@@ -5,7 +5,7 @@
 }
 
 <p>
-    <button type="button" class="btn btn-success btnCreate">Criar Novo Cliente</button>
+    <button type="button" class="btn btn-success btnCreate">Criar Novo Cliente &nbsp;<i class="glyphicon glyphicon-plus"></i></button>
 </p>
 
 @if ((Model != null) && (Model.Count() > 0))
@@ -45,9 +45,9 @@
                         @Html.DisplayFor(modelItem => item.Pais)
                     </td>
                     <td>
-                        <button type="button" class="btn btn-link btnDetalhes" data-id="@item.Id">Detalhes</button>
-                        <button type="button" class="btn btn-link btnEditar" data-id="@item.Id">Editar</button>
-                        <button type="button" class="btn btn-link btnDeletar" data-id="@item.Id">Deletar</button>
+                        <button type="button" class="btn btn-light btnDetalhes" data-id="@item.Id">Detalhes&nbsp;<i class="glyphicon glyphicon-list-alt"></i></button>
+                        <button type="button" class="btn btn-light btnEditar" data-id="@item.Id">Editar&nbsp;<i class="glyphicon glyphicon-pencil"></i></button>
+                        <button type="button" class="btn btn-light btnDeletar" data-id="@item.Id">Deletar&nbsp;<i class="glyphicon glyphicon-remove-circle"></i></button>
                     </td>
                 </tr>
             }
